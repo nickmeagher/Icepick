@@ -3,7 +3,6 @@
 </p>
 
 <br />
-<br />
 
 # Primer - WordPress Starter Theme with Boostrap
 
