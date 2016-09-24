@@ -2,7 +2,8 @@
   <img src="library/images/primer.png" alt="Primer Co"/>
 </p>
 
-
+<br />
+<br />
 
 # Primer - WordPress Starter Theme with Boostrap
 
