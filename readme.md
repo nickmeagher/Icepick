@@ -2,6 +2,8 @@
   <img src="library/images/primer.png" alt="Primer Co"/>
 </p>
 
+
+
 # Primer - WordPress Starter Theme with Boostrap
 
 This starter theme is really a personalized version of [Bones](https://github.com/eddiemachado/bones). I love bones but I find that some of the templates are a little cluttered and I also use Bootstrap for almost everything I do so I figured I would include that as well. If you find any issues or want to improve on it, feel free to submit a pull request!
