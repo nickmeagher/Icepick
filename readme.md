@@ -1,4 +1,6 @@
-# ![primer](library/images/primer.png)
+<p align="center">
+  <img src="library/images/primer.png" alt="Primer Co"/>
+</p>
 
 # Primer - WordPress Starter Theme with Boostrap
 
