@@ -120,6 +120,9 @@ function primer_scripts_and_styles() {
 
     // register main stylesheet
     wp_register_style( 'primer-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
+    
+    // responsive stylesheet
+    wp_register_style( 'responsive-stylesheet', get_stylesheet_directory_uri() . '/library/css/responsive.css', array(), '', 'all' );
 
     // ie-only style sheet
     wp_register_style( 'primer-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
@@ -134,6 +137,7 @@ function primer_scripts_and_styles() {
 
     // enqueue styles and scripts
     wp_enqueue_style( 'primer-stylesheet' );
+    wp_enqueue_style( 'responsive-stylesheet' );
     wp_enqueue_style('primer-ie-only');
 
     wp_enqueue_script( 'jquery' );
