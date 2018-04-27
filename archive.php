@@ -3,7 +3,7 @@
 
   <div class="container">
   	<div class="row">
-  		<div class="col-md-9">
+  		<div class="col-lg-9">
     		
     		<?php if (is_category()) { ?>
 			    <h1 class="archive-title h2">
@@ -95,11 +95,11 @@
           
           <?php endif; ?>
           
-  		</div><!-- end .col-md-9 -->
+  		</div><!-- end .col-lg-9 -->
   		
-  		<div class="col-md-3">
+  		<div class="col-lg-3">
     		<?php get_sidebar(); ?>
-  		</div><!-- end .col-md-3 -->
+  		</div><!-- end .col-lg-3 -->
   		
   	</div><!-- end .row -->
   </div><!-- end .container -->
