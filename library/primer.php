@@ -220,19 +220,14 @@ MENUS & NAVIGATION
 function primer_main_nav() {
 	
     wp_nav_menu(array(
-    	'container' => 'div',                           // remove nav container
-    	'container_class' => 'collapse navbar-collapse', // class of container (should you choose to use it)
-    	'container_id' => 'main-navbar-collapse',
-    	'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-    	'menu' => __( 'The Main Menu', 'primertheme' ),  // nav name
-    	'menu_class' => 'nav navbar-nav navbar-right',         // adding custom nav class
-    	'theme_location' => 'main-nav',                 // where it's located in the theme
-    	'before' => '',                                 // before the menu
-        'after' => '',                                  // after the menu
-        'link_before' => '',                            // before each link
-        'link_after' => '',                             // after each link
-        'depth' => 0,                                   // limit the depth of the nav
-    	'walker' => new wp_bootstrap_navwalker()
+    	'container_id' => 'primary-menu',
+    	'menu' => __( 'The Main Menu', 'primertheme' ),
+    	'theme_location' => 'main-nav',
+    	'container'      => false,
+    	'depth'          => 2,
+    	'menu_class'     => 'navbar-nav ml-auto mt-0 align-items-lg-center',
+    	'walker' => new Bootstrap_NavWalker(),
+    	'fallback_cb'    => 'Bootstrap_NavWalker::fallback',
 	));
 	
 } /* end primer main nav */
