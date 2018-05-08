@@ -44,17 +44,21 @@
 
 	<body <?php body_class(); ?>>
   	
-  	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+  	<nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          
           <a class="navbar-brand" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
-        </div>
-    
-        <?php primer_main_nav(); ?>
-      </div><!-- /.container -->
-    </nav>
+        	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="<?php esc_html_e( 'Toggle Navigation', 'theme-textdomain' ); ?>">
+        		<span class="navbar-toggler-icon"></span>
+        	</button>
+        
+        	<div class="collapse navbar-collapse" id="navbar-content">
+          	
+          	<?php primer_main_nav(); ?>
+          	
+        	</div><!-- end #navbar-content -->
+            	
+        </div><!-- end .container -->
+      </nav>
+
     
