@@ -17,11 +17,6 @@
 }
 
 /* Extra Small Devices, Phones */ 
-@media only screen and (max-width : 480px) {
-
-}
-
-/* Custom, iPhone Retina */ 
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 576px) {
 
 }
