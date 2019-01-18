@@ -471,6 +471,16 @@ TOOLS
   text-rendering: optimizelegibility;
 }
 
+*:focus {
+	outline: none !important;
+}
+
+section {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
 
 /* ==========================================================================
    Custom CSS
