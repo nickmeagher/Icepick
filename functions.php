@@ -4,7 +4,9 @@
   URL: htp://byprimer.co
 */
 
+
 /************* INCLUDE NEEDED FILES ***************/
+
 
 /*
 1. library/primer.php
@@ -20,6 +22,7 @@
 	- adding custom fields to user profiles
 */
 require_once('library/primer.php'); // if you remove this, primer will break
+require_once('library/acf_blocks.php'); // ACF Gutenberg Blocks
 require_once('wp_bootstrap_navwalker.php'); // Bootstrap Nav Walker
 
 /*
@@ -40,13 +43,14 @@ require_once('wp_bootstrap_navwalker.php'); // Bootstrap Nav Walker
 
 /************* THUMBNAIL SIZE OPTIONS *************/
 
+
 // Thumbnail sizes
-add_image_size( 'primer-600', 600, 150, true );
-add_image_size( 'primer-300', 300, 100, true );
+add_image_size( 'primer-1400', 1400, 0, true );
 
 
 
 /************* ACTIVE SIDEBARS ********************/
+
 
 // Sidebars & Widgetizes Areas
 function primer_register_sidebars() {
@@ -67,6 +71,7 @@ function primer_register_sidebars() {
 
 
 /************* COMMENT LAYOUT *********************/
+
 		
 // Comment Layout
 function primer_comments($comment, $args, $depth) {
@@ -105,7 +110,9 @@ function primer_comments($comment, $args, $depth) {
 <?php
 } // don't remove this bracket!
 
+
 /************* SEARCH FORM LAYOUT *****************/
+
 
 // Search Form
 function primer_wpsearch($form) {
@@ -122,6 +129,7 @@ function primer_wpsearch($form) {
 
 /************* IMAGE FORMATTING *****************/
 
+
 // Allow SVG Upload to WP
 function cc_mime_types($mimes) {
   $mimes['svg'] = 'image/svg+xml';
@@ -129,5 +137,16 @@ function cc_mime_types($mimes) {
 }
 
 add_filter('upload_mimes', 'cc_mime_types');
+
+
+/************* ACF *****************/
+
+
+// Add ACF Options Page
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}
 
 ?>
