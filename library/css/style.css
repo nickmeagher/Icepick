@@ -481,6 +481,11 @@ section {
 	background-position: center center;
 }
 
+/* Make Gutenberg Editor Filll Width */
+.wp-block {
+	max-width: 100%;
+}
+
 
 /* ==========================================================================
    Custom CSS
