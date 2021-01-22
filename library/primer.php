@@ -149,6 +149,7 @@ function primer_scripts_and_styles() {
 
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'primer-modernizr' );
+    wp_enqueue_script( 'aos-js' );
     wp_enqueue_script( 'primer-js' );
 
   }
@@ -235,7 +236,7 @@ function primer_main_nav() {
     	'theme_location' => 'main-nav',
     	'container'      => false,
     	'depth'          => 2,
-    	'menu_class'     => 'navbar-nav ml-auto mt-0 align-items-lg-center',
+    	'menu_class'     => 'navbar-nav ms-auto mt-0 align-items-lg-center',
     	'walker' => new Bootstrap_NavWalker(),
     	'fallback_cb'    => 'Bootstrap_NavWalker::fallback',
 	));
