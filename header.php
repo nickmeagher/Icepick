@@ -32,6 +32,16 @@
 
 		<!-- Google Analytics-->
 		<!-- end analytics -->
+		
+		<!-- Fallback for AOS in case of disabled JS -->
+		<noscript>
+	        <style type="text/css">
+	            [data-aos] {
+	                opacity: 1 !important;
+	                transform: translate(0) scale(1) !important;
+	            }
+	        </style>
+	    </noscript>
 
 	</head>
 
