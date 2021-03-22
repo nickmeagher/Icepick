@@ -21,6 +21,10 @@
 		top: 100%;
 	}
 	
+	.nav-toggle {
+		display: none;
+	}
+	
 }
 
 /* Medium Devices, Desktops */
