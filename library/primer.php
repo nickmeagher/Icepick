@@ -235,9 +235,9 @@ function primer_main_nav() {
     	'menu' => __( 'The Main Menu', 'primertheme' ),
     	'theme_location' => 'main-nav',
     	'container'      => false,
-    	'depth'          => 2,
+    	'depth'          => 3,
     	'menu_class'     => 'navbar-nav ms-auto mt-0 align-items-lg-center',
-    	'walker' => new Bootstrap_NavWalker(),
+    	'walker' => new WP_Bootstrap_NavWalker(),
     	'fallback_cb'    => 'Bootstrap_NavWalker::fallback',
 	));
 	

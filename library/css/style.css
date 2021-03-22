@@ -486,6 +486,14 @@ section {
 	max-width: 100%;
 }
 
+/* Dropdown toggle activate on hover */
+.nav-item:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+    display: block;
+}
+
 
 /* ==========================================================================
    Custom CSS
