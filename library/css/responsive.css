@@ -6,10 +6,74 @@
 
 }
 
+@media all and (min-width: 992px) {
+	
+	.dropdown-menu {
+		display: block;
+		opacity: 0;
+		visibility: hidden;
+		margin-top: 0;
+	}
+	
+	.nav-item:hover .dropdown-menu {
+		visibility: visible;
+		opacity: 1;
+		top: 100%;
+	}
+	
+}
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+	
+	#menu-nav-menu {
+		padding-top: 30px;
+	}
+	
+	.navbar .mega-menu .dropdown-menu,
+	.navbar .dropdown-menu {
+		display: none;
+		background: #f0f0f0;
+		padding: 10px;
+		margin-top: 0;
+		transition: none;
+	}
+	
+	.navbar .mega-menu .sub-header {
+		width: 100%;
+		padding: 0 15px;
+		text-align: left;
+	}
+	
+	.navbar .dropdown {
+		position: relative;
+	}
+	
+	.navbar .dropdown .nav-toggle {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		font-size: 20px;
+		padding: 18px 20px 20px 20px;
+		line-height: 1;
+		border-left: 1px solid #f0f0f0;
+		cursor: pointer;
+	}
+	
+	.navbar .dropdown .nav-toggle i {
+		-webkit-transition: all 0.2s ease;/* Safari 3.2+, Chrome */
+		-moz-transition: all 0.2s ease;/* Firefox 4-15 */
+		-o-transition: all 0.2s ease;/* Opera 10.5-12.00 */
+		transition: all 0.2s ease;/* Firefox 16+, Opera 12.50+ */
+	}
+	
+	.navbar .dropdown .nav-toggle.active i {
+		transform: rotate(180deg);
+	}
 
 }
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
